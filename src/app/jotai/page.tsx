@@ -27,7 +27,7 @@ const JotaiPage = () => {
   };
 
 
-  // Provider에 등록된 store
+  // Provider에 등록된 store 가져오기
   // const store = useStore();
   // console.log(counterState.toString());
 
