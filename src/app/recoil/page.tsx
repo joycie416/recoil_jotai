@@ -13,7 +13,7 @@ const RecoilPage = () => {
   const count = useRecoilValue(counterState); // read-only
   const setCount = useSetRecoilState(counterState);
 
-  // 
+  // default 값으로 초기화
   const resetCount = useResetRecoilState(counterState);
 
   // 파생 상태는 useRecoilValue로 사용
@@ -25,7 +25,7 @@ const RecoilPage = () => {
 
   return (
     <div className="w-full flex flex-col">
-      <p>RecoilPage</p>
+      <p>Recoil Page</p>
       <p>
         {count} : {isEven ? "짝수" : "홀수"}
       </p>

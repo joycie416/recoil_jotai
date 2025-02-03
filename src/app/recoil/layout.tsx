@@ -9,5 +9,14 @@ export default function Layout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return <RecoilRoot>{children}</RecoilRoot>;
+  return <RecoilRoot
+    // <RecoilRoot>에 initializeState를 사용하여 초기값 설정 가능
+    // initializeState={({ set }) => {
+    //   set(아톰, 값);
+    // }}
+
+    // <RecoilRoot>가 중첩되는 경우 override=true를 설정하면 상위 상태를 덮어쓸 수 있음
+    // 기본값=false
+    // override={true}
+  >{children}</RecoilRoot>;
 }
