@@ -1,8 +1,9 @@
 import { atom } from "jotai";
+import { atomWithReset } from "jotai/utils";
 
 type CounterType = number;
 
-const counterState = atom<CounterType>(0);
+const counterState = atomWithReset<CounterType>(0);
 
 type IsEvenType = boolean;
 
