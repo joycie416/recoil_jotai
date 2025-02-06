@@ -1,4 +1,4 @@
-# Recoil, Jotai, Zustand
+# Recoil and Jotai
 
 ## Recoil
 
